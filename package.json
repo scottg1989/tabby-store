@@ -1,0 +1,31 @@
+{
+  "name": "tabby-store",
+  "version": "1.0.0",
+  "description": "Store for Tabby",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://scottg1989:9f3227ba2e3b2da442ef9ba6e9b8c539e8419d2e@github.com/scottg1989/tabby-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottg1989/tabby-store/issues"
+  },
+  "homepage": "https://github.com/scottg1989/tabby-store#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^3.2.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.0.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.5"
+  }
+}
