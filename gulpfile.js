@@ -8,9 +8,14 @@ var gulp = require('gulp'),
 
 
 gulp.task('webpack-build', function () {
-  return gulp.src(jsPath + '/entry.js')
-    .pipe(webpack(require('./webpack.config.js')))
-    .pipe(gulp.dest('client/build/'));
+    var wp = webpack(require('./webpack.config.js'));
+    wp.on('error',function(e){
+        gutil.log(e);
+        l.end();
+    });
+    return gulp.src(jsPath + '/entry.js')
+        .pipe(wp)
+        .pipe(gulp.dest('client/build/'));
 });
 
 /* this is a hack, until this can properly be supported via webpack config */
