@@ -18,7 +18,9 @@ var Logo = React.createClass({
 var BasketButton = React.createClass({
     render () {
         return (
-            <span className="basket-button">£££</span>
+            <button className="basket-button">
+                <span className="fa fa-shopping-basket" aria-hidden="true"></span>
+            </button>
         );
     }
 });
