@@ -7,7 +7,7 @@ var Footer = React.createClass({
   render () {
     return (
       <div className="footer u-clearfix">
-        Footer
+        <span>©Tabitha Gulliver 2016</span>
       </div>
     );
   }

@@ -11,7 +11,7 @@ gulp.task('webpack-build', function () {
     var wp = webpack(require('./webpack.config.js'));
     wp.on('error',function(e){
         gutil.log(e);
-        l.end();
+        wp.end();
     });
     return gulp.src(jsPath + '/entry.js')
         .pipe(wp)
