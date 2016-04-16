@@ -3,6 +3,8 @@ var ReactDOM = require('react-dom');
 var Header = require("./header.jsx");
 var Footer = require("./footer.jsx");
 
+import 'stylesheets/base'
+
 class Page extends React.Component {
   render() {
     return (
