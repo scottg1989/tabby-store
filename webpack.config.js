@@ -5,11 +5,11 @@ const path = require('path');
 const sassLoaders = [
   'css-loader',
   'postcss-loader',
-  'sass-loader?includePaths[]=' + path.resolve(__dirname, './client/assets')
+  'sass-loader?includePaths[]=' + path.resolve(__dirname, './client/src')
 ]
 
 module.exports = {
-    entry: './client/assets/js/entry.js',
+    entry: './client/src/js/entry.js',
     output: {
         path: __dirname + '/js',
         filename: "bundle.js"
@@ -40,6 +40,6 @@ module.exports = {
     ],
     resolve: {
         extensions: ['', '.js', '.jsx', '.scss'],
-        root: [path.join(__dirname, './client/assets')]
+        root: [path.join(__dirname, './client/src')]
     }
 };
