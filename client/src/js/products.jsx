@@ -1,4 +1,5 @@
 var React = require("react");
+import { Link  } from 'react-router'
 
 require("../stylesheets/modules/product-card.scss");
 require("../stylesheets/utilities/clearfix.scss");
@@ -7,11 +8,13 @@ var ProductCard = React.createClass({
   render () {
     return (
       <div className="product-card">
-          <img className="product-card-image" src={this.props.image} />
-          <div className="product-card-info">
-              <span className="product-card-name">{this.props.name}</span>
-              <span className="product-card-price">£{this.props.price}</span>
-          </div>
+          <Link to="/products/12ab">
+              <img className="product-card-image" src={this.props.image} />
+              <div className="product-card-info">
+                  <span className="product-card-name">{this.props.name}</span>
+                  <span className="product-card-price">£{this.props.price}</span>
+              </div>
+          </Link>
       </div>
     );
   }
